@@ -1,0 +1,17 @@
+body {
+    background-color: rgba(146, 167, 160, 0.822);
+    margin: 50px;
+    padding: 50px 100px;
+    border: 1px solid black;
+    
+}
+img{
+    width:80%;
+}
+.textoCentrado {
+    text-align:center;
+}
+
+.textoazul {
+    color:rgb(9, 9, 65);
+}

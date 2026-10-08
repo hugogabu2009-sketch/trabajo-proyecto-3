@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Hugo Cardozo - Renta de casaquinta</title>
+
+    <link
+        rel="stylesheet"
+        href="assets/css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <h1 class="textoazul textoCentrado">
+        Renta de casaquinta
+    </h1>
+
+
+    <p class="textoazul textoCentrado">
+        Casaquinta al aire libre y con wifi
+    </p>
+
+
+    <hr>
+
+
+    <img
+        src="assets/imagen/casaquinta.jpg"
+        alt="Paisaje de la casaquinta"
+    >
+
+
+    <h2>
+        Precio y estadía discutible
+    </h2>
+
+
+    <!-- ================================= -->
+    <!-- INICIO DE SESIÓN                  -->
+    <!-- ================================= -->
+
+    <section class="login">
+
+        <h2>
+            Iniciar sesión
+        </h2>
+
+
+        <input
+            type="text"
+            id="usuario"
+            placeholder="Nombre de usuario"
+        >
+
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Contraseña"
+        >
+
+
+        <button onclick="iniciarSesion()">
+            Iniciar sesión
+        </button>
+
+
+        <p id="mensajeLogin"></p>
+
+
+        <button
+            id="cerrarSesion"
+            onclick="cerrarSesion()"
+            style="display: none;"
+        >
+            Cerrar sesión
+        </button>
+
+    </section>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- VALORACIÓN                        -->
+    <!-- ================================= -->
+
+    <section class="valoracion">
+
+        <h2>
+            Valorá esta casaquinta
+        </h2>
+
+
+        <div id="estrellas">
+
+            <span onclick="votar(1)">★</span>
+
+            <span onclick="votar(2)">★</span>
+
+            <span onclick="votar(3)">★</span>
+
+            <span onclick="votar(4)">★</span>
+
+            <span onclick="votar(5)">★</span>
+
+        </div>
+
+
+        <p id="mensajeVoto">
+            Iniciá sesión para poder votar.
+        </p>
+
+
+        <p>
+            Valoración promedio:
+
+            <strong id="promedio">
+                0
+            </strong>
+
+            / 5
+        </p>
+
+
+        <p>
+            Cantidad de votos:
+
+            <strong id="cantidadVotos">
+                0
+            </strong>
+        </p>
+
+    </section>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- ASISTENTE IA                      -->
+    <!-- ================================= -->
+
+    <section
+        id="asistente-ia"
+        aria-label="Asistente IA"
+    >
+
+        <div class="ia-cabecera">
+
+            <div>
+
+                <h2>
+                    🤖 Asistente IA
+                </h2>
+
+                <span id="ia-estado">
+                    Listo para responder
+                </span>
+
+            </div>
+
+
+            <button
+                id="ia-borrar"
+                type="button"
+                title="Borrar historial"
+            >
+                🗑️
+            </button>
+
+        </div>
+
+
+        <!-- HISTORIAL DE PREGUNTAS Y RESPUESTAS -->
+
+        <div
+            id="ia-mensajes"
+            class="ia-mensajes"
+        >
+
+            <div class="ia-bienvenida">
+
+                <strong>
+                    ¡Hola!
+                </strong>
+
+                <br>
+
+                Soy el asistente de esta casaquinta.
+
+                <br>
+
+                Podés preguntarme sobre
+                precios, estadía, wifi,
+                instalaciones o cualquier
+                otra información disponible.
+
+            </div>
+
+        </div>
+
+
+        <!-- CAMPO PARA PREGUNTAR -->
+
+        <form
+            id="ia-formulario"
+            class="ia-formulario"
+        >
+
+            <textarea
+                id="ia-input"
+                rows="2"
+                placeholder="Escribí tu pregunta..."
+                required
+            ></textarea>
+
+
+            <button
+                id="ia-enviar"
+                type="submit"
+            >
+                Enviar
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================================= -->
+    <!-- JAVASCRIPT                        -->
+    <!-- ================================= -->
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
